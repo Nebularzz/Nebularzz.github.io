@@ -29,6 +29,31 @@
 			</div>
 		</div>
 		<div style="clear: both; display: flex">
+			<p id="splash"></p>
+			<script>
+				function randomSplash() {
+					let splashes = [
+					"hello world",
+					"nyawruffal",
+					"shhhhhhhhhhhhhhhh",
+					"neb neb",
+					"geometry dash",
+					"ziguana",
+					"sayfd",
+					"ziggy blud",
+					"autistic",
+					"gentoo",
+					"neovim",
+					"hs.hpo",
+					"follow me on the socials",
+					"you can make pretty things without frameworks",
+					]
+					let index = Math.floor(Math.random() * splashes.length)
+					return splashes[index]
+				}
+				
+				document.getElementById("splash").innerText = randomSplash()
+			</script>
 		</div>
 		<div class="body" style="display: flex;">
 			<div>
