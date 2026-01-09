@@ -1,0 +1,41 @@
+h1,
+h2,
+p,
+li {
+  color: #cdd6f4;
+}
+
+body {
+  font-size: 1.5em;
+  padding: 0 1em 0 1em;
+  background-color: #1e1e2e;
+}
+
+.header {
+  font-family: monospace;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.header-title {
+  display: flex;
+  justify-content: start;
+  gap: 1em;
+  align-items: center;
+}
+
+.social-links {
+  text-align: right;
+}
+
+.body {
+  font-family: monospace;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.splash {
+  background-image: linear-gradient(to right, #cdd6f4, #f2cdcd);
+  background-clip: text;
+  color: transparent;
+}
