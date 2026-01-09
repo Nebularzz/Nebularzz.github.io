@@ -4,23 +4,16 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>oph.sh</title>
-		<style>
-			h1,
-			h2,
-			p,
-			li {
-				color: #cdd6f4;
-			}
-		</style>
+		<link rel="stylesheet" href="style/style.css">
 	</head>
-	<body style="font-family: monospace; font-size: 1.5em; padding: 0 1em 0 1em; background-color: #1e1e2e">
+	<body>
 		<div class="header">
-			<div style="float: left; display: flex; align-items: center">
-				<img src="images/earless-cat.jpg" alt="Amazing profile picture" style="height: 3em; margin-right: 1em; border-radius: 50%">
-				<h1>oph.sh</h1>
+			<div class="header-title">
+				<h1 class="splash" id="splash"></h1>
+				<script src="scripts/splashes.js"></script>
 			</div>
-			<div style="float: right">
-				<p>
+			<div>
+				<p class="social-links">
 					<a href="https://youtube.com/@nebularzz">YouTube</a>
 					| <a href="https://codeberg.org/nebular">Codeberg</a>
 					| <a href="https://github.com/Nebularzz">Github</a>
@@ -28,41 +21,14 @@
 				</p>
 			</div>
 		</div>
-		<div style="clear: both; display: flex">
-			<p id="splash"></p>
-			<script>
-				function randomSplash() {
-					let splashes = [
-					"hello world",
-					"nyawruffal",
-					"shhhhhhhhhhhhhhhh",
-					"neb neb",
-					"geometry dash",
-					"ziguana",
-					"sayfd",
-					"ziggy blud",
-					"autistic",
-					"gentoo",
-					"neovim",
-					"hs.hpo",
-					"follow me on the socials",
-					"you can make pretty things without frameworks",
-					]
-					let index = Math.floor(Math.random() * splashes.length)
-					return splashes[index]
-				}
-				
-				document.getElementById("splash").innerText = randomSplash()
-			</script>
-		</div>
-		<div class="body" style="display: flex;">
+		<div class="body">
 			<div>
 				<h2>Blog</h2>
 				<ul>
 					<li>Nothing there yet :(</li>
 				</ul>
 			</div>
-			<div style="margin-left: 2em">
+			<div>
 				<h2>Projects</h2>
 				<ul>
 					<li><a href="https://codeberg.org/nebular/brainfuck">brainfuck</a>
